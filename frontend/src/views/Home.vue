@@ -195,7 +195,7 @@ export default {
     }
   }
 
-  @media screen and (min-width: 300px) and (max-width: 599px){
+  @media screen and (min-width: 360px) and (max-width: 599px){
     .home{
       padding-bottom: 50px;    
       &-logo{
@@ -215,14 +215,38 @@ export default {
         .button{
           button{
             width: 320px;
+            
           }
         }
       }
     }
   }
-
   
-
+  @media screen  and (max-width: 359px){
+    .home{
+      padding-bottom: 50px;    
+      &-logo{
+        img{
+          width: 290px;
+          height: 148px;
+        }
+      }
+      &-description{
+        width: 90%;
+      }
+      &-form{
+        .secondGroup{
+          width: 90%;
+          margin-right: 0px;
+        }
+        .button{
+          button{
+            width: 280px;
+          }
+        }
+      }
+    }
+  }
   
   
 </style>  
