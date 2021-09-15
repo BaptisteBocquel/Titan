@@ -9,7 +9,7 @@ Bienvenue sur le projet Titan
 
 ## Coté Backend
 
-- Placez le dossier nommé "backend_titan" (reçu par mail) dans le dossier nommé "www" pour wamp et "htdocs" pour mamp.
+- Décompressez le dossier nommé "backend_titan" (reçu par mail) et placez le dans le dossier nommé "www" pour wamp et "htdocs" pour mamp.
 - A l'aide de phpMyAdmin, importez le fichier titan.sql (reçu par mail), ce qui créera la base de données.
 - Dans le fichier controller.php, remplacez les variables $databasename, $username et $password par vos identifiants.
 - Lancez wamp ou mamp et votre backend est prêt.
