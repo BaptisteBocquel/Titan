@@ -75,10 +75,11 @@ export default {
       var user_choice = this.user_choice;
       var user_mail = this.user_mail
 
+      // On vérifie les champs définit dans validator
       this.$validate()
       .then(function (success){
           if(success){
-              let url = "http://localhost/backend_titan/controller.php";
+              let url = process.env.VUE_APP_ADRESS_BACKEND;
               axios.post(url,{
                   user_firstName: user_firstName,
                   user_lastName: user_lastName,
@@ -86,16 +87,16 @@ export default {
                   user_choice: user_choice
                 },{
                   headers : {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'text/plain',
+                    
                   }
               }) 
               .then(response => {
-                console.log(response)
+                console.log(response);
                 document.location.reload();
               })
               .catch(e => {
                 console.log(e);
-                //document.location.reload();
               })
           }
       })
